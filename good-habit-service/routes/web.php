@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/summary', \App\Http\Controllers\Summmary\IndexController::class);
+
+
 Route::get('/', function () {
     return view('welcome');
 });
